@@ -28,6 +28,7 @@
        }
        #projectDescription{
         text-align: center;
+
        }
        .card-img-top{
           margin-top: 20px;
@@ -40,7 +41,10 @@
         background-color:#E8AE00;
        }
        #footer {
-        height: 140px;
+        margin-top: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        
         background-color:#E5AD00;
          text-align: center;
        }
@@ -50,31 +54,29 @@
         color: #575757;
        
        }
-       
-       #contact-icon {
-        
-
+       body{
+        position: relative;
        }
     </style>
 
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="400">
 
-   <nav class="navbar navbar-full navbar-fixed-top navbar-dark bg-inverse">
+   <nav class="navbar navbar-full navbar-fixed-top navbar-dark bg-inverse" id="navbar">
 
       <a class="navbar-brand success" id="hover" href="#"><h2>DGWorld </h2></a>
       <ul class="nav navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link"  href="#">Introduction <span class="sr-only">(current)</span></a>
+        <li class="nav-item ">
+          <a class="nav-link"  href="#jumbotron">Introduction <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
+          <a class="nav-link" href="#projectDescription">Portfolio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Resume</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#footer">Contact</a>
         </li>
       </ul>
     <form class="form-inline pull-xs-right">
@@ -83,7 +85,7 @@
     </form>
   </nav>
 
-  <div class="jumbotron">
+  <div class="jumbotron" id="jumbotron">
       <h1 class="display-3">Welcome to DGWorld</h1>
       <p class="lead" id="jumbotron-discription">On this website you can find my personal details, C.V and the Project which i have done. </p>
       <hr class="my-2">
@@ -92,14 +94,14 @@
         <a class="btn btn-primary btn-lg" href="#" role="button">View Details</a>
       </p>
   </div>
-  <div class="container" id="projectDescription">
+  <div class="container" id="projectDescription" >
     <div class="row">
     <h1> Project Details </h1>
     <p class="lead">Description : The project are done with the help HTML5, CSS, JavaScript, Jquery, Bootstrap</p> 
     </div>
   </div>
 
-  <div class="container">
+  <div class="container" >
       <div class="card-deck-wrapper">
         <div class="card-deck">
           <div class="card">
